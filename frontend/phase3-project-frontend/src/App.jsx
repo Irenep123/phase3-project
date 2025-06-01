@@ -1,10 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import QuizList from "./components/QuizList";
+import QuizView from "./components/QuizView";
+import QuizCreate from "./components/QuizCreate";
+import "./App.css";
 
 function App() {
-  
+  return (
+    <div className="App">
+      <h1>QuizQuest</h1>
+      <QuizList />
+    </div>
+  );
 }
 
-export default App
+export default App;

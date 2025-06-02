@@ -5,7 +5,11 @@ function QuizList() {
   const [quizzes, setQuizzes] = useState([]);
 
   useEffect(() => {
-    fetchQuizzes().then(setQuizzes);
+    fetch("http://localhost:8000/quizzes")
+      .then((res) => res.json())
+      .then((data) => {
+        setQuizzes(data);
+      });
   }, []);
 
   return (

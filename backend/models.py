@@ -1,16 +1,24 @@
-#from sqlalchemy.ext.declarative import declarative_base
-#from sqlalchemy import Column, Interger, Text
-#Base = declarative_base()
-
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, create_engine
+from sqlalchemy.orm import relationship,sessionmaker
+# from database import engine 
+# from database import Base
+
+engine = create_engine('sqlite:///phase3-project.db', echo = True)
+Session = sessionmaker(bind=engine)
+
+
+def get_db():
+    session = Session()
+    # try and catch
+    try:
+        yield session
+    finally:
+        session.close()
+
 Base = declarative_base()
 
 # Example model
-from database import engine 
-
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
-from sqlalchemy.orm import relationship
-from database import Base
 
 class Quiz(Base):
     __tablename__ = 'quizzes'

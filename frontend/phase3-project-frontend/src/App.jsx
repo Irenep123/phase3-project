@@ -16,9 +16,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<QuizList />} />
-          <Route path="/quiz/:quizId" element={<QuizViewWrapper />} />
+          <Route path="/quiz" element={<QuizView />} />
           <Route path="/create" element={<QuizCreate />} />
-          <Route path="/take/:quizId" element={<QuizTakeWrapper/>} />
+          <Route path="/take" element={<QuizTake/>} />
         </Routes>
       </div>
     </Router>
@@ -26,15 +26,15 @@ function App() {
 }
 
 // This wrapper is necessary to access the dynamic :quizId route param
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
-function QuizViewWrapper() {
-  const { quizId } = useParams();
-  return <QuizView quizId={quizId} />;
-}
+// function QuizViewWrapper() {
+//   const { quizId } = useParams();
+//   return <QuizView quizId={quizId} />;
+// }
 
-function QuizTakeWrapper() {
-  const { quizId } = useParams();
-  return <QuizTake quizId={ quizId }/>
-}
-export default App;
+// function QuizTakeWrapper() {
+//   const { quizId } = useParams();
+//   return <QuizTake quizId={ quizId }/>
+// }
+ export default App;

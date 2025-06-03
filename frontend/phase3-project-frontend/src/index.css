@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgb(12, 38, 100) ;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #eaebf1;
   text-decoration: inherit;
 }
 a:hover {
@@ -65,4 +65,46 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+button {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #535bf2;
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #4a4edf;
+  transform: scale(0.98);
+}
+
+input,
+select,
+textarea {
+  padding: 0.8em 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1em;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #646cff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(240, 240, 242, 0.2);
 }

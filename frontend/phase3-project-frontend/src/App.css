@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-  color: #2d3748;
+  color: #2d3748; /* Dark text color for body */
   line-height: 1.6;
 }
 
@@ -88,7 +88,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #4a5568;
+  color: #4a5568; /* Dark text for nav links */
   font-weight: 600;
   padding: 0.75rem 1.25rem;
   border-radius: 12px;
@@ -127,7 +127,7 @@ body {
 
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  color: #ffffff; /* White text for primary buttons */
   border: none;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
@@ -298,17 +298,17 @@ body {
 
 .badge-easy {
   background: linear-gradient(135deg, #68d391 0%, #38a169 100%);
-  color: white;
+  color: white; /* White text on green background */
 }
 
 .badge-medium {
   background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
-  color: white;
+  color: white; /* White text on orange background */
 }
 
 .badge-hard {
   background: linear-gradient(135deg, #fc8181 0%, #e53e3e 100%);
-  color: white;
+  color: white; /* White text on red background */
 }
 
 .difficulty {
@@ -358,13 +358,13 @@ body {
 
 .btn-outline {
   background: rgba(255, 255, 255, 0.9);
-  color: #667eea;
+  color: #667eea; /* Blue text for outline buttons */
   border: 2px solid #667eea;
 }
 
 .btn-outline:hover {
   background: #667eea;
-  color: white;
+  color: white; /* White text on hover */
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
@@ -414,7 +414,7 @@ body {
   gap: 0.75rem;
   cursor: pointer;
   font-weight: 600;
-  color: #4a5568;
+  color: #4a5568; /* Dark text for labels */
   padding: 0.5rem;
   border-radius: 8px;
   transition: background-color 0.3s ease;
@@ -444,7 +444,7 @@ body {
 .form-group label {
   display: block;
   font-weight: 700;
-  color: #2d3748;
+  color: #2d3748; /* Dark text for form labels */
   margin-bottom: 0.75rem;
   font-size: 1rem;
 }
@@ -459,6 +459,7 @@ body {
   font-size: 1rem;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.9);
+  color: #2d3748; /* Dark text for inputs */
 }
 
 .form-input:focus,
@@ -521,7 +522,7 @@ body {
 
 .select-label {
   font-weight: 700;
-  color: #2d3748;
+  color: #2d3748; /* Dark text for select labels */
   font-size: 1rem;
 }
 
@@ -534,6 +535,7 @@ body {
   background: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #2d3748; /* Dark text for select */
 }
 
 .quiz-select:focus {
@@ -551,13 +553,13 @@ body {
 .quiz-select.correct {
   border-color: #48bb78;
   background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
-  color: #22543d;
+  color: #22543d; /* Dark green text for correct answers */
 }
 
 .quiz-select.incorrect {
   border-color: #f56565;
   background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
-  color: #c53030;
+  color: #c53030; /* Dark red text for incorrect answers */
 }
 
 /* Feedback Styles */
@@ -571,13 +573,13 @@ body {
 .feedback.success {
   background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
   border: 2px solid #68d391;
-  color: #22543d;
+  color: #22543d; /* Dark green text for success feedback */
 }
 
 .feedback.error {
   background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
   border: 2px solid #fc8181;
-  color: #c53030;
+  color: #c53030; /* Dark red text for error feedback */
 }
 
 .feedback-text {
@@ -594,7 +596,7 @@ body {
 /* Score Summary */
 .score-summary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  color: white; /* White text on purple background */
   border-radius: 20px;
   padding: 1.5rem;
   margin-top: 1.5rem;
@@ -613,7 +615,7 @@ body {
 /* Debug and Test Styles */
 .debug-output {
   background: #1a202c;
-  color: #e2e8f0;
+  color: #e2e8f0; /* Light text on dark background */
   padding: 1.5rem;
   border-radius: 15px;
   margin: 1.5rem 0;
@@ -626,7 +628,7 @@ body {
 }
 
 .debug-output h4 {
-  color: #63b3ed;
+  color: #63b3ed; /* Light blue text for headings in debug output */
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -655,20 +657,20 @@ body {
 
 .preview-section h4 {
   margin-bottom: 1rem;
-  color: #2d3748;
+  color: #2d3748; /* Dark text for preview headings */
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .preview-content p {
   margin-bottom: 0.75rem;
-  color: #4a5568;
+  color: #4a5568; /* Dark text for preview content */
   font-weight: 600;
 }
 
 .preview-content ul {
   margin-left: 2rem;
-  color: #4a5568;
+  color: #4a5568; /* Dark text for preview lists */
 }
 
 .preview-content li {
@@ -677,13 +679,13 @@ body {
 }
 
 .correct-preview {
-  color: #22543d;
+  color: #22543d; /* Dark green text for correct preview */
   font-weight: 700;
 }
 
 /* Utility Classes */
 .no-options {
-  color: #718096;
+  color: #718096; /* Medium gray text */
   font-style: italic;
   text-align: center;
   padding: 3rem;
@@ -694,7 +696,7 @@ body {
 
 .debug-info {
   font-size: 0.8rem;
-  color: #a0aec0;
+  color: #a0aec0; /* Medium gray text for debug info */
   margin-top: 0.75rem;
   font-family: "Fira Code", monospace;
 }
@@ -702,7 +704,7 @@ body {
 .form-hint {
   display: block;
   font-size: 0.85rem;
-  color: #718096;
+  color: #718096; /* Medium gray text for form hints */
   margin-top: 0.5rem;
   font-style: italic;
 }
@@ -735,13 +737,98 @@ body {
 
 .remove-btn {
   background: linear-gradient(135deg, #fed7d7 0%, #fc8181 100%);
-  color: #c53030;
+  color: #c53030; /* Dark red text for remove button */
   border: 2px solid #fc8181;
 }
 
 .remove-btn:hover {
   background: linear-gradient(135deg, #fc8181 0%, #e53e3e 100%);
-  color: white;
+  color: white; /* White text on hover */
+}
+
+/* Add these styles to your existing CSS */
+
+.debug-info-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.debug-info-section h3 {
+  color: #2d3748; /* Dark text for section headings */
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h4 {
+  color: #667eea; /* Blue text for card headings */
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  color: #4a5568; /* Dark text for card content */
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Add these styles to your existing CSS */
+
+.test-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.test-section h3 {
+  color: #2d3748; /* Dark text for section headings */
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.test-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.troubleshooting-guide {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.troubleshooting-guide h3 {
+  color: #2d3748; /* Dark text for guide headings */
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Responsive Design */
